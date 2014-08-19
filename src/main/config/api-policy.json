@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt2404167110000",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::face-graph-walker-config/*"
+            ]
+        },
+        {
+            "Sid": "Stmt2404167182000",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:*"
+            ],
+            "Resource": [
+                "arn:aws:dynamodb:us-east-1:224740987877:table/graph-walker-users",
+                "arn:aws:dynamodb:us-east-1:224740987877:table/graph-walker-connections"
+            ]
+        }
+    ]
+}
